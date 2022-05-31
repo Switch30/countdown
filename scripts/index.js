@@ -3,10 +3,11 @@ const head = document.getElementById('head');
 const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 const canvasCon = document.getElementById('confetti');
+const yt = document.getElementById('yt');
 
 const config = {
   birthdate: 'Jun 1, 2022',
-  name: 'Kianza Amira Syifa'
+  name: 'Kianza'
 };
 
 function hideEverything() {
@@ -15,6 +16,7 @@ function hideEverything() {
   giftbox.style.display = 'none';
   canvasC.style.display = 'none';
   canvasCon.style.display = 'none';
+  yt.style.display = 'none';
 }
 
 hideEverything();
@@ -482,6 +484,7 @@ x = setInterval(function() {
       if (step === 3) {
       }
       if (step === 4) {
+        yt.style.display = 'initial';
         return;
       }
       setTimeout(openBox, stepMinutes[step - 1]);
